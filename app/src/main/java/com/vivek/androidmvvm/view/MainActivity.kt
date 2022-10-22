@@ -1,7 +1,8 @@
-package com.vivek.androidmvvm
+package com.vivek.androidmvvm.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.vivek.androidmvvm.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
