@@ -9,12 +9,12 @@ import com.vivek.androidmvvm.R
 import com.vivek.androidmvvm.utilites.Utility
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Utility.makeFullScreen(this)
         supportActionBar?.hide()
-
         navigateToLoginSignup()
     }
 
