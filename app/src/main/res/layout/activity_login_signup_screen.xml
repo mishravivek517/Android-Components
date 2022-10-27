@@ -5,10 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-
     tools:context=".view.LoginSignupScreen">
 
-
+<ProgressBar
+    android:layout_width="match_parent"
+    app:indicatorColor="@color/white"
+    android:elevation="6dp"
+    android:id="@+id/progressBar"
+    android:visibility="gone"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_height="wrap_content"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,9 +31,10 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/githublogo" />
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/githublogo"
+                app:tint="@color/white" />
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txtEmail"
@@ -34,6 +44,7 @@
                 android:background="@drawable/edittext_border"
                 android:fontFamily="@font/montserrat_medium"
                 android:hint="Enter Your Email"
+                android:text="vivek@gmail.com"
                 android:inputType="textEmailAddress"
                 android:padding="10dp"
                 android:textColor="@color/white"
@@ -45,6 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
+                android:text="123123123"
                 android:background="@drawable/edittext_border"
                 android:fontFamily="@font/montserrat_medium"
                 android:hint="Enter Your Password"
