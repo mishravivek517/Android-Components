@@ -36,8 +36,6 @@ class LoginSignupScreen : AppCompatActivity() {
             }
             //Utility.showProgress(this)
         }
-
-
     }
 
     private fun moveToUserList() {
