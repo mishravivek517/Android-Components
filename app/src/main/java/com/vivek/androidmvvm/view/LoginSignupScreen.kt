@@ -1,5 +1,6 @@
 package com.vivek.androidmvvm.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -37,8 +38,8 @@ class LoginSignupScreen : AppCompatActivity() {
     }
 
     private fun moveToUserList() {
-//        startActivity(Intent(this@LoginSignupScreen, UserListActivity::class.java))
-//        finish()
+        startActivity(Intent(this@LoginSignupScreen, UserListActivity::class.java))
+        finish()
     }
 
 }
