@@ -1,8 +1,6 @@
 package com.vivek.androidmvvm.view
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.vivek.androidmvvm.R
@@ -25,7 +23,7 @@ class LoginSignupScreen : AppCompatActivity() {
                 Toast.makeText(this, "Email and Password can not be empty", Toast.LENGTH_SHORT)
                     .show()
             } else if (email.isValidEmail() && txtPassword.text.toString().length > 7) {
-                progressBar.visibility = View.VISIBLE
+//                progressBar.visibility = View.VISIBLE
                 moveToUserList()
             } else {
                 Toast.makeText(
@@ -39,8 +37,8 @@ class LoginSignupScreen : AppCompatActivity() {
     }
 
     private fun moveToUserList() {
-        startActivity(Intent(this@LoginSignupScreen, UserListActivity::class.java))
-        finish()
+//        startActivity(Intent(this@LoginSignupScreen, UserListActivity::class.java))
+//        finish()
     }
 
 }

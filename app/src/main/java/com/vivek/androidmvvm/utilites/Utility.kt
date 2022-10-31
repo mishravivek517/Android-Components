@@ -2,16 +2,10 @@ package com.vivek.androidmvvm.utilites
 
 import android.app.Activity
 import android.app.Dialog
-import android.content.Context
-import android.graphics.PorterDuff
-import android.graphics.drawable.ColorDrawable
-import android.view.Window
 import android.view.WindowManager
-import android.widget.ProgressBar
-import com.vivek.androidmvvm.R
 
 
-class Utility  {
+class Utility {
 
     companion object {
 
@@ -19,8 +13,8 @@ class Utility  {
 //private var dialog: Dialog? = null
 
 
-        fun  makeFullScreen(activity: Activity){
-           activity.window.setFlags(
+        fun makeFullScreen(activity: Activity) {
+            activity.window.setFlags(
                 WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
             )
