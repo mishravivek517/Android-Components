@@ -1,9 +1,9 @@
 package com.vivek.androidmvvm.view
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.vivek.androidmvvm.R
@@ -29,13 +29,10 @@ class UserListActivity : AppCompatActivity() {
         val mainRepository = MainRepository(retrofitService)
         binding.recyclerview.adapter = adapter
 
-        viewModel = ViewModelProvider(
-            this,
-            MyViewModelFactory(mainRepository)
-        ).get(MainViewModel::class.java)
+        viewModel = ViewModelProvider(this, MyViewModelFactory(mainRepository)).get(MainViewModel::class.java)
 
         viewModel.movieList.observe(this) {
-            adapter.setMovies(it)
+            adapter.listDataUser = listOf(it)
         }
 
         viewModel.errorMessage.observe(this) {
@@ -54,4 +51,3 @@ class UserListActivity : AppCompatActivity() {
 
     }
 }
-

@@ -16,11 +16,7 @@ class MainViewModel constructor(private val mainRepository: MainRepository) : Vi
     get() = _errorMessage
 
 
-
-
-
-    val movieList = MutableLiveData<List<Movie>>()
-
+    val movieList = MutableLiveData<Movie>()
     var job: Job? = null
 
 
@@ -42,7 +38,7 @@ class MainViewModel constructor(private val mainRepository: MainRepository) : Vi
                 }
                 is NetworkState.Error -> {
                     if (response.response.code() == 401) {
-                        //movieList.postValue(NetworkState.Error())
+//                        movieList.postValue(NetworkState.Error())
                     } else {
                         //movieList.postValue(NetworkState.Error)
                     }
