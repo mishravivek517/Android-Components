@@ -11,15 +11,14 @@
     <ProgressBar
         android:id="@+id/progressDialog"
         android:layout_width="50dp"
+        android:elevation="8dp"
         android:layout_height="50dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+     android:layout_centerInParent="true"
         android:indeterminateTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview"
+        android:id="@+id/listRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"

@@ -10,8 +10,7 @@ import kotlinx.android.synthetic.main.activity_login_signup_screen.*
 
 class LoginSignupScreen : AppCompatActivity() {
 
-    private fun String.isValidEmail() =
-        isNotEmpty() && android.util.Patterns.EMAIL_ADDRESS.matcher(this).matches()
+    private fun String.isValidEmail() = isNotEmpty() && android.util.Patterns.EMAIL_ADDRESS.matcher(this).matches()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
